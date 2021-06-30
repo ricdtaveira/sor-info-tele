@@ -13,15 +13,6 @@ O LXC funciona como uma virtualização bastante leve comparada às implementaç
 
 [Docker Cheat Sheets](https://cheatography.com/tag/docker/) 
   
-## Instalação 
-
-Instalar o Docker em um SO Linux
-
-```bash 
-  npm install my-project
-  cd my-project
-```
-
 ## Tutoriais e Vídeos
 
 [Tutorial Definitivo de DOCKER para INICIANTES (Ubuntu)](https://www.youtube.com/watch?v=bsGkIKP1OZ4)

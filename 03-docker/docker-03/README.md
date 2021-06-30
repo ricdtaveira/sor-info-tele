@@ -24,10 +24,14 @@ Etapas da instalação:
 ## Instalação 2
 
 Instalar o Docker usando o snap.
+1) Executar o comando de install no snap
+2) Executar 
 
 ```bash 
-  npm install my-project
-  cd my-project
+  sudo snap install docker
+  sudo docker info
+  sudo docker run hello-world
+  sudo docker images
 ```
 
     
