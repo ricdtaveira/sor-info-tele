@@ -24,18 +24,34 @@ Etapas da instalação:
 ## Instalação 2
 
 Instalar o Docker usando o snap.
+1) Chamar o sudo 
+2) Informar a senha do usuário
+3) Testar a instalação com o comando docker info
+4) Chamar a execução do container hello-world
+5) Verificar novamente o ambiente do docker com o comando docker info
+6) Mostar as imagens depositadas no repositório com o comando docker images.
 
 ```bash 
-  npm install my-project
-  cd my-project
+  sudo snap install docker
+  sudo docker info
+  sudo docker hello-world
+  sudo docker info
 ```
 
     
-## Instalação 2
+## Configurar o acesso do Docker sem o uso do sudo 
 
-Instalar o Docker em um SO Linux
+Instalar o Docker usando o snap.
+1) Verificar os grupso cadastrados no Linux 
+2) Informar a senha do usuário
+3) Testar a instalação com o comando docker info
+4) Chamar a execução do container hello-world
+5) Verificar novamente o ambiente do docker com o comando docker info
+6) Mostar as imagens depositadas no repositório com o comando docker images.
 
 ```bash 
-  npm install my-project
-  cd my-project
+  cat /etc/groups | docker
+  sudo docker info
+  sudo docker hello-world
+  sudo docker info
 ```
