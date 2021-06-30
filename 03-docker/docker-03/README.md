@@ -1,10 +1,12 @@
 
 # Criação e Manutenção das Imagens
 
-A instalação do Docker será apresentada abaixo com dois formatos.   
+A criação de uma imagem no Docker pode ser feita das seguintes formas: 
+1) Criação de uma imagem a partir de um Dockerfile
+2) Criação de uma imagem a partir de uma imagem base.   
 
   
-## Instalação 1
+## Criação de uma Imagem a partir do Dockerfile
 
 Etapas da instalação:
 1) Instalar o pacote  Docker a partir de um script de instalação baixado do site do Docker. Adiciona na maquina local um repositório Docker e inicia a instalação do Docker.
@@ -21,7 +23,7 @@ Etapas da instalação:
 ```
 
   
-## Instalação 2
+## Criação de uma imagem a partir de uma imagem base
 
 Instalar o Docker usando o snap.
 1) Executar o comando de install no snap
@@ -32,14 +34,4 @@ Instalar o Docker usando o snap.
   sudo docker info
   sudo docker run hello-world
   sudo docker images
-```
-
-    
-## Instalação 2
-
-Instalar o Docker em um SO Linux
-
-```bash 
-  npm install my-project
-  cd my-project
 ```
