@@ -1,11 +1,9 @@
 
 # Instalação do Docker
 
-A instalação do Docker pode Docker é uma ferramenta para criar e manter containers. Um container armazena serviços de forma isolada do SO host, como: servidor web, gerenciador de banco de dados, aplicação, servidor de mensagens etc. O LXC (LinuX Containers) implementa containers no sistema operacional Linux.  
+A instalação do Docker será apresentada abaixo com dois formatos.   
 
-O LXC funciona como uma virtualização bastante leve comparada às implementações de máquinas virtuais como Virtual Box, VMWARE e outras. O LXC não faz uso de emulação ou suporte a hardware, apenas proporciona a execução de vários sistemas Linux de forma isolada – daí vem a palavra container.
-
-   
+  
 ## Instalação 1
 
 Etapas da instalação:
