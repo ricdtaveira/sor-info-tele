@@ -51,7 +51,7 @@ Executar a sequencia de passos a seguir:
 7) Reiniciar a máquina para que essas alterações passem a funcionar 
 
 ```bash 
-  cat /etc/groups | grep docker
+  cat /etc/group | grep docker
   sudo groupadd docker
   cat /etc/group | grep docker
   groups $USER
