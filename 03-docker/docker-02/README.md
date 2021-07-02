@@ -1,17 +1,17 @@
 
 # Comandos do Docker
 
-Os comandos a listados abaixo executam operações em imagens e containers.   
-
+Os comandos listados abaixo executam operações em imagens e containers. Uma imagem é como um arquivo .iso. Um container é uma instancia na memória alocada com uma imagem que executa funcionalidades de uma imagem básica de uma disribuição Linux juntamente com aplicações que sãoinstaladas e configuradas para executar no container.
   
-## Docker Image
+## Comandos Docker Image
 
+Comandos que executam a criação, carga e upload de imagens no repositório local.
 
 | Comando              | Descrição                                   |
 | :------------------- | :------------------------------------------ |
 | `docker images`      | Lista todas as imagens do repositório local |
 | `docker search <palavra-chave>` | Pesquisa no repositório remoto uma imagem com a `palavra-chave` |
-| `docker pull usuario/imagem` | Download de uma imagem do Docker Hub |
+| `docker pull usuario/imagem` | Download da imagem `usuario/imagem` do repositório Docker Hub |
 | `docker images`      | Lista todas as imagens do repositório local |
 | `docker images`      | Lista todas as imagens do repositório local |
 | `docker images`      | Lista todas as imagens do repositório local |
@@ -19,15 +19,6 @@ Os comandos a listados abaixo executam operações em imagens e containers.
 | `docker images`      | Lista todas as imagens do repositório local |
 
 
-
-```bash 
-  curl -sSL https://get.docker.com | sh 
-  /etc/init.d/docker start
-  ps -ef | grep docker
-  docker ps
-```
-
-  
 ## Instalação 2
 
 Instalar o Docker usando o snap.
