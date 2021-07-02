@@ -11,7 +11,7 @@ Comandos que executam a criação, carga e upload de imagens no repositório loc
 | :------------------- | :------------------------------------------ |
 | `docker images`      | Lista todas as imagens do repositório local |
 | `docker search <palavra-chave>` | Pesquisa no repositório remoto uma imagem com a `<palavra-chave>` |
-| `docker pull <usuario/imagem>` | Download da imagem `<usuario/imagem>` do repositório Docker Hub |
+| `docker pull <usuario/imagem>` | Download da imagem `<usuario/imagem>` do repositório Docker Hub para o repositório local |
 | `docker images`      | Lista todas as imagens do repositório local |
 | `docker images`      | Lista todas as imagens do repositório local |
 | `docker images`      | Lista todas as imagens do repositório local |
@@ -19,21 +19,21 @@ Comandos que executam a criação, carga e upload de imagens no repositório loc
 | `docker images`      | Lista todas as imagens do repositório local |
 
 
-## Instalação 2
+## Comandos Docker Container
 
-Instalar o Docker usando o snap.
+Comandos que executam o instaciamento de uma imagem na memória com sua posterior configuração e alteração do estado do container com posterior criação de uma imagem alterada.
 
-```bash 
-  npm install my-project
-  cd my-project
-```
+
+| Comando              | Descrição                                   |
+| :------------------- | :------------------------------------------ |
+| `docker images`      | Lista todas as imagens do repositório local |
+| `docker search <palavra-chave>` | Pesquisa no repositório remoto uma imagem com a `<palavra-chave>` |
+| `docker pull <usuario/imagem>` | Download da imagem `<usuario/imagem>` do repositório Docker Hub para o repositório local |
+| `docker images`      | Lista todas as imagens do repositório local |
+| `docker images`      | Lista todas as imagens do repositório local |
+| `docker images`      | Lista todas as imagens do repositório local |
+| `docker images`      | Lista todas as imagens do repositório local |
+| `docker images`      | Lista todas as imagens do repositório local |
 
     
-## Instalação 2
-
-Instalar o Docker em um SO Linux
-
-```bash 
-  npm install my-project
-  cd my-project
-```
+ 
