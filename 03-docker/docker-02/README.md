@@ -5,7 +5,7 @@ Os comandos listados abaixo executam operações em imagens e containers. Uma im
   
 ## Comandos Docker Image
 
-Comandos que executam a criação, carga e upload de imagens no repositório local.
+Comandos que executam a listagem, criação, carga de imagens no repositório local e upload em repositório remoto.
 
 | Comando              | Descrição                                   |
 | :------------------- | :------------------------------------------ |
@@ -21,12 +21,12 @@ Comandos que executam a criação, carga e upload de imagens no repositório loc
 
 ## Comandos Docker Container
 
-Comandos que executam o instaciamento de uma imagem na memória com sua posterior configuração e alteração do estado do container com posterior criação de uma imagem alterada.
+Comandos que executam o instanciamento de uma imagem na memória, configuração e alteração do estado do container com posterior criação de uma imagem alterada.
 
 
 | Comando              | Descrição                                   |
 | :------------------- | :------------------------------------------ |
-| `docker images`      | Lista todas as imagens do repositório local |
+| `docker ps`      | Lista os containers que estão executando |
 | `docker search <palavra-chave>` | Pesquisa no repositório remoto uma imagem com a `<palavra-chave>` |
 | `docker pull <usuario/imagem>` | Download da imagem `<usuario/imagem>` do repositório Docker Hub para o repositório local |
 | `docker images`      | Lista todas as imagens do repositório local |
