@@ -10,7 +10,7 @@ Os comandos a listados abaixo executam operações em imagens e containers.
 | Comando              | Descrição                                   |
 | :------------------- | :------------------------------------------ |
 | `docker images`      | Lista todas as imagens do repositório local |
-| `docker search <palavra-chave` | Pesquisa no repositório remoto uma imagem com <palavra-chave> |
+| `docker search <palavra-chave>` | Pesquisa no repositório remoto uma imagem com a `palavra-chave` |
 | `docker pull usuario/imagem` | Download de uma imagem do Docker Hub |
 | `docker images`      | Lista todas as imagens do repositório local |
 | `docker images`      | Lista todas as imagens do repositório local |
