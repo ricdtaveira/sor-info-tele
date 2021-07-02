@@ -1,16 +1,23 @@
 
 # Comandos do Docker
 
-A instalação do Docker será apresentada abaixo com dois formatos.   
+Os comandos a listados abaixo executam operações em imagens e containers.   
 
   
-## Instalação 1
+## Docker Image
 
-Etapas da instalação:
-1) Instalar o pacote  Docker a partir de um script de instalação baixado do site do Docker. Adiciona na maquina local um repositório Docker e inicia a instalação do Docker.
-2) Inicializar a execução do Docker 
-3) Verificar se o Docker está executando com o comando ps
-4) Verificar os containers que estão executando localmente.
+
+| Comando              | Descrição                                   |
+| :------------------- | :------------------------------------------ |
+| `docker images`      | Lista todas as imagens do repositório local |
+| `docker images`      | Lista todas as imagens do repositório local |
+| `docker images`      | Lista todas as imagens do repositório local |
+| `docker images`      | Lista todas as imagens do repositório local |
+| `docker images`      | Lista todas as imagens do repositório local |
+| `docker images`      | Lista todas as imagens do repositório local |
+| `docker images`      | Lista todas as imagens do repositório local |
+| `docker images`      | Lista todas as imagens do repositório local |
+
 
 
 ```bash 
