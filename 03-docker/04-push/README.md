@@ -1,19 +1,31 @@
 
 # Fazer Push de uma Imagem para o Docker Hub
-Após o commit de alterações em uma imagem no repositório local é prudente fazer uma cópia dessa
-imagem para um serviço na nuvem onde se preserva todo o trabalho na configuração dessa imagem. O Docker Hub permite a criação de repositórios de públicos e/ou privados que hospedam imagens que poderão ser usadas posteriormente.  
+Após o `commit` das alterações em uma imagem no repositório local é prudente fazer uma cópia dessa
+imagem para um serviço na nuvem onde se preserva todo o trabalho na configuração dessa imagem. 
+O Docker Hub permite a criação de repositórios públicos e/ou privados que hospedam imagens que poderão ser usadas posteriormente.  
+Os passos apresentados a seguir definem um ciclo envolvendo as operações necessárias a obtenção de uma imagem som até o upload de uma versao modificada para o Docker Hub
 
-## 1) Criar conta no Docker Hub 
+## 1) Criar um repositório no Docker Hub 
 
-A criação de uma imagem no Docker pode ser feita das seguintes formas: 
-1) Criação de uma imagem a partir de um Dockerfile
-2) Criação de uma imagem a partir de uma imagem base.   
+A criação de uma no Docker Hub antecede a criação de um repositório para que se possa fazer o `push` de uma imagem alterada. Portanto, é necessário proceder da seguinte forma: 
+1) Acessar o site do Docker Hub. [Docker Hub](https://hub.docker.com/)
+2) Criar uma cona no Docker Hub. [Criar Conta](https://hub.docker.com/signup)
+3) Criar um repositório no Docker Hub.
+4) Fazer o `push` de imagens obedecendo a seguinte nomenclatura: <conta>/<repositorio>:tag    
 
 ## 2) Fazer um Pull de uma imagem hospedada no GitHub
 
+Antes de fazer uma alteração na imagem é necessária baixá-la do Docker Hub.
+
+```bash 
+  $ docker search ubuntu
+  $ docker pull ricdtaveira/ubuntu:latest
+  $ docker images
+```
 
 ## 3) Alterar a imagem no Repositório Local
 
+Para alterar uma imagem  
 
 
 ## 4) Criar imagem com Tag compatível com o repositório no Docker Hub
