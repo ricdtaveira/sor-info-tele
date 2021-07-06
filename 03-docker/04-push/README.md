@@ -23,17 +23,37 @@ Antes de fazer uma alteração na imagem é necessária baixá-la do Docker Hub.
   $ docker images
 ```
 
-## 3) Alterar a imagem no Repositório Local
+## 3) Alterar ou criar uma imagem no Repositório Local
 
-Para alterar uma imagem  
-
+A alteração de uma imagem se faz da seguinte forma: 
+1) Instanciar a imagem em um container 
+2) Fazer as alterações na imagem 
+3) Fazer um commit da imagem com uma nova tag
+4) Encerrar a execução do container
 
 ## 4) Criar imagem com Tag compatível com o repositório no Docker Hub
 
+A partir da imagem alterada mudar o nome dessa imagem de forma a torná-la copatível com a nomenclatura do repositório em que ficará alocada no Docker Hub.
 
+
+```bash 
+  $ docker tag 8f904350bdcl ricdtaveira/ubuntu:latest 
+  $ docker images
+```
   
 ## 5) Upload da Imagem local para o repositório no Docker Hub
 
+O upload da imagem alterada para o Docker Hub se faz da seguinte forma:  
+1) Login no Docker Hub 
+2) Execução do comando `push` 
+3) Verificação do repositório no Docker Hub
+
+
+```bash 
+  $ docker login 
+  $ docker push ricdtaveira/ubuntu:latest
+  
+```
 
 
 Etapas da instalação:
