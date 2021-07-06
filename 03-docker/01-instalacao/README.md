@@ -32,10 +32,10 @@ Instalar o Docker usando o snap.
 6) Mostar as imagens depositadas no repositório com o comando docker images.
 
 ```bash 
-  sudo snap install docker
-  sudo docker info
-  sudo docker hello-world
-  sudo docker info
+  $ sudo snap install docker
+  $ sudo docker info
+  $ sudo docker hello-world
+  $ sudo docker info
 ```
 
     
@@ -51,10 +51,10 @@ Executar a sequencia de passos a seguir:
 7) Reiniciar a máquina para que essas alterações passem a funcionar 
 
 ```bash 
-  cat /etc/group | grep docker
-  sudo groupadd docker
-  cat /etc/group | grep docker
-  groups $USER
-  sudo usermod -aG docker $USER
-  groups $USER   
+  $ cat /etc/group | grep docker
+  $ sudo groupadd docker
+  $ cat /etc/group | grep docker
+  $ groups $USER
+  $ sudo usermod -aG docker $USER
+  $ groups $USER   
 ```
