@@ -2,7 +2,6 @@
 # Fazer Push de uma Imagem para o Docker Hub
 Após o `commit` das alterações em uma imagem no repositório local é prudente fazer uma cópia dessa
 imagem para um serviço na nuvem onde se preserva todo o trabalho na configuração dessa imagem.
-
 O Docker Hub permite a criação de repositórios públicos e/ou privados que hospedam imagens que poderão ser usadas posteriormente.  
 Os passos apresentados a seguir definem um ciclo envolvendo as operações necessárias a obtenção de uma imagem som até o upload de uma versao modificada para o Docker Hub
 
