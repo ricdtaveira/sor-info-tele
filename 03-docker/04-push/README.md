@@ -11,7 +11,7 @@ A criação de uma conta no Docker Hub antecede a criação de um repositório p
 1) Acessar o site do Docker Hub. [Docker Hub](https://hub.docker.com/)
 2) Criar uma conta no Docker Hub. [Criar Conta](https://hub.docker.com/signup)
 3) Criar um repositório no Docker Hub.
-4) Fazer o `push` de imagens obedecendo a seguinte nomenclatura: <conta>/<repositorio>:tag    
+4) Fazer o `push` de imagens obedecendo a seguinte nomenclatura: `<conta>/<repositorio>:tag`    
 
 ## 2) Fazer um Pull de uma imagem hospedada no GitHub
 
