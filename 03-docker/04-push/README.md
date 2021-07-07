@@ -13,7 +13,7 @@ A criação de uma conta no Docker Hub antecede a criação de um repositório p
 3) Criar um repositório no Docker Hub.
 4) Fazer o `push` de imagens obedecendo a seguinte nomenclatura: `<conta>/<repositorio>:tag`    
 
-## 2) Fazer um Pull de uma imagem hospedada no GitHub
+## 2) Fazer um Pull de uma imagem hospedada no GitHub ou criar uma imagem usando o Dockerfile
 
 Antes de fazer uma alteração na imagem é necessária baixá-la do Docker Hub.
 
@@ -25,34 +25,62 @@ Antes de fazer uma alteração na imagem é necessária baixá-la do Docker Hub.
 
 ## 3) Alterar ou criar uma imagem no Repositório Local
 
-A alteração de uma imagem se faz da seguinte forma: 
-1) Instanciar a imagem em um container 
-2) Fazer as alterações na imagem 
-3) Fazer um commit da imagem com uma nova tag
-4) Encerrar a execução do container
+A alteração de uma imagem se faz da seguinte forma:
 
-## 4) Criar imagem com Tag compatível com o repositório no Docker Hub
+### 3.1) Instanciar a imagem em um container 
+   Chamar o comando `docker run` . A partir daí o prompt do root do container em execução estará pronto para receber comandos para executar a manutenção do container com posterior `commit` da imagem.
 
-A partir da imagem alterada mudar o nome dessa imagem de forma a torná-la copatível com a nomenclatura do repositório em que ficará alocada no Docker Hub.
+```bash 
+  $ docker run -i -t ricdtaveira/ubuntu:latest 
+  root@a7bc19c594aa:/#
+```
+
+### 3.2) Sair do ambiente de execução do container sem parar sua execução.
+   Para sair do ambiente de execução de um container e voltar para o ambiente de execução do host onde o docker executa deve ser digitada a seguinte sequencia de teclas `ctrl + p + q` no ambiente de execução do container.
+
+```bash 
+  root@a7bc19c594aa:/# <ctrl p q>
+  $ 
+```
+
+### 3.3) Salvar as alterações da imagem com os dados do container em execução
+   Observar os containers executando usando o comando `docker ps`.
+   Salvar a imagem com as alterações configuradas no container com o comando `docker commit`.
+   Verificar as imagens do repositório local com o comando `docker images`.
+
+```bash 
+  $ docker ps
+  $ docker tag 8f904350bdcl ricdtaveira/ubuntu:1.0 
+  $ docker images
+```
+
+### 3.4) Se for necessário alterar o container novamente ...
+  Uma nova alteração no container será possível com uma nova entrada no ambiente de execução do container. Para entrar no ambiente de execução do container usar o comando `docker attach <container-id>`. Entrando no ambiente de execução do container seguir com as alterações e executar os passos 3.2 e 3.3 anteriormente descritos.
+
+```bash 
+  $ docker ps
+  $ docker attach 8f904350bdcl  
+  $ /# 
+```
+
+### 3.5) Criar imagem com Tag compatível com o repositório no Docker Hub
+
+A partir da imagem alterada mudar o nome dessa imagem de forma a torná-la compatível com a nomenclatura do repositório em que ficará alocada no Docker Hub. A nomenclatura para o Docker Hub é `user_id/repository_id:tag`.
 
 ```bash 
   $ docker tag 8f904350bdcl ricdtaveira/ubuntu:latest 
   $ docker images
 ```
   
-## 5) Upload da Imagem local para o repositório no Docker Hub
+### 3.6) Upload da Imagem local para o repositório no Docker Hub
 
 O upload da imagem alterada para o Docker Hub se faz da seguinte forma:  
-1) Login no Docker Hub 
-2) Execução do comando `push` 
-3) Verificação do repositório no Docker Hub
+a) Login no Docker Hub 
+b) Execução do comando `push` 
+c) Verificação do repositório no Docker Hub
 
 
 ```bash 
   $ docker login 
-  $ docker push ricdtaveira/ubuntu:latest
-  
-```
-
-  
- 
+  $ docker push ricdtaveira/ubuntu:latest  
+``` 
