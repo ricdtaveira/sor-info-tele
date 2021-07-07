@@ -9,8 +9,11 @@ Os passos apresentados a seguir definem um ciclo envolvendo as operações neces
 
 A criação de uma conta no Docker Hub antecede a criação de um repositório para que se possa fazer o `push` de uma imagem alterada. Portanto, é necessário proceder da seguinte forma: 
 1.1) Acessar o site do Docker Hub. [Docker Hub](https://hub.docker.com/);
+
 1.2) Criar uma conta no Docker Hub. [Criar Conta](https://hub.docker.com/signup);
+
 1.3) Criar um repositório no Docker Hub;
+
 1.4) Fazer o `push` de imagens obedecendo a seguinte nomenclatura: `<conta>/<repositorio>:tag`.    
 
 ## 2) Fazer um Pull de uma imagem hospedada no GitHub ou criar uma imagem usando o Dockerfile
