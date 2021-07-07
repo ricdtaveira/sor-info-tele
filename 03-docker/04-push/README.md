@@ -3,7 +3,7 @@
 Após o `commit` das alterações em uma imagem no repositório local é prudente fazer uma cópia dessa
 imagem para um serviço na nuvem onde se preserva todo o trabalho na configuração dessa imagem.
 O Docker Hub permite a criação de repositórios públicos e/ou privados que hospedam imagens que poderão ser usadas posteriormente.  
-Os passos apresentados a seguir definem um ciclo envolvendo as operações necessárias a obtenção de uma imagem som até o upload de uma versao modificada para o Docker Hub
+Os passos apresentados a seguir definem um ciclo envolvendo as operações necessárias a obtenção de uma imagem até o upload de uma versao modificada para o Docker Hub
 
 ## 1) Criar um repositório no Docker Hub 
 
@@ -36,7 +36,7 @@ A alteração de uma imagem se faz da seguinte forma:
 ```
 
 ### 3.2) Sair do ambiente de execução do container sem parar sua execução.
-   Para sair do ambiente de execução de um container e voltar para o ambiente de execução do host onde o docker executa deve ser digitada a seguinte sequencia de teclas `ctrl + p + q` no ambiente de execução do container.
+   Para sair do ambiente de execução de um container e voltar para o ambiente de execução do host onde o docker executa deve ser digitada a seguinte sequência de teclas `ctrl + p + q` no ambiente de execução do container.
 
 ```bash 
   root@a7bc19c594aa:/# <ctrl p q>
@@ -46,11 +46,12 @@ A alteração de uma imagem se faz da seguinte forma:
 ### 3.3) Salvar as alterações da imagem com os dados do container em execução
    Observar os containers executando usando o comando `docker ps`.
    Salvar a imagem com as alterações configuradas no container com o comando `docker commit`.
+   A imagem salva deve seguir um padrão de nomenclatura do Docker Hub: `user_id/repository_id:tag`.
    Verificar as imagens do repositório local com o comando `docker images`.
 
 ```bash 
   $ docker ps
-  $ docker tag 8f904350bdcl ricdtaveira/ubuntu:1.0 
+  $ docker commit 8f904350bdcl ricdtaveira/ubuntu:1.0 
   $ docker images
 ```
 
