@@ -3,19 +3,19 @@
 Após o `commit` das alterações em uma imagem no repositório local é prudente fazer uma cópia dessa
 imagem para um serviço na nuvem onde se preserva todo o trabalho na configuração dessa imagem.
 O Docker Hub permite a criação de repositórios públicos e/ou privados que hospedam imagens que poderão ser usadas posteriormente.  
-Os passos apresentados a seguir definem um ciclo envolvendo as operações necessárias a obtenção de uma imagem até o upload de uma versao modificada para o Docker Hub
+Os passos apresentados a seguir definem um ciclo envolvendo as operações necessárias a obtenção de uma imagem até o upload de uma versão modificada para o Docker Hub.
 
 ## 1) Criar um repositório no Docker Hub 
 
 A criação de uma conta no Docker Hub antecede a criação de um repositório para que se possa fazer o `push` de uma imagem alterada. Portanto, é necessário proceder da seguinte forma: 
-1) Acessar o site do Docker Hub. [Docker Hub](https://hub.docker.com/)
-2) Criar uma conta no Docker Hub. [Criar Conta](https://hub.docker.com/signup)
-3) Criar um repositório no Docker Hub.
-4) Fazer o `push` de imagens obedecendo a seguinte nomenclatura: `<conta>/<repositorio>:tag`    
+1.1) Acessar o site do Docker Hub. [Docker Hub](https://hub.docker.com/);
+1.2) Criar uma conta no Docker Hub. [Criar Conta](https://hub.docker.com/signup);
+1.3) Criar um repositório no Docker Hub;
+1.4) Fazer o `push` de imagens obedecendo a seguinte nomenclatura: `<conta>/<repositorio>:tag`.    
 
 ## 2) Fazer um Pull de uma imagem hospedada no GitHub ou criar uma imagem usando o Dockerfile
 
-Antes de fazer uma alteração na imagem é necessária baixá-la do Docker Hub.
+Antes de fazer uma alteração na imagem é necessário baixá-la do Docker Hub.
 
 ```bash 
   $ docker search ubuntu
@@ -76,9 +76,11 @@ A partir da imagem alterada mudar o nome dessa imagem de forma a torná-la compa
 ### 3.6) Upload da Imagem local para o repositório no Docker Hub
 
 O upload da imagem alterada para o Docker Hub se faz da seguinte forma:  
-a) Login no Docker Hub 
-b) Execução do comando `push` 
-c) Verificação do repositório no Docker Hub
+a) Login no Docker Hub;
+
+b) Execução do comando `push`; 
+
+c) Verificação do repositório no Docker Hub.
 
 
 ```bash 
